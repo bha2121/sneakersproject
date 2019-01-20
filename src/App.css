@@ -2,31 +2,51 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.Title{
+  padding-top: 1px;
+  padding-bottom: 50px;
+  text-align: center;
+  text-shadow: beige;
+  font-size: large;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(109, 189, 158);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.HeaderTxt{
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-shadow: beige;
+  font-size: 50px;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  color: aliceblue
+}
+
+button{
+  background-color: rgb(109, 189, 158);
   color: white;
+  font-size: 15px; 
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover{
+  background: rgb(248, 198, 170);
+  color: white;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+  height: 20px;
+  width: 200px;
+}
+input:focus{
+  background-color: rgb(231, 229, 229);
+}
+
+.SubmitField{
+  align-content: flex-start;
 }
