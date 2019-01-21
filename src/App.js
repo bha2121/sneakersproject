@@ -23,8 +23,11 @@ class App extends Component {
         <div>
           <SubmitField/>
         </div>
-
-        
+        <br></br>
+        <br></br>
+        <div>
+          <ShoeList/>
+        </div>
 
 
       </div>

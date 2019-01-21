@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: white;
+  height: 100vh;
 }
 
 .Title{
@@ -44,7 +46,7 @@ input{
   width: 200px;
 }
 input:focus{
-  background-color: rgb(231, 229, 229);
+  background-color: rgba(232, 238, 236, 0.925);
 }
 
 .SubmitField{

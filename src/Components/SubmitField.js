@@ -17,49 +17,59 @@ class SubmitField extends Component {
           })
       }
 
-      handleSubmit(){
-          console.log(this.state)
+      handleSubmit(e){
+          e.preventDefault();
+          alert("you submitted "+ `${this.state.brand} ${this.state.model}`)
+
       }
 
 
       
     render(){
         return(
-            <form>
+            <form onSubmit={(e) => {this.handleSubmit(e)}}> 
                 <input 
                 type="text" 
                 name="brand"
                 placeholder="Brand"
+                autoComplete="off"
                 value= {this.state.brand} 
                 onChange={(e) => this.handleInputUpdate(e)}
                 />
-                <br/><br/>
+                <br/>
+                <br/>
                 <input 
                 type="text" 
                 name="model"
                 placeholder="Model"
+                autoComplete="off"
                 value= {this.state.model} 
                 onChange={(e) => this.handleInputUpdate(e)}
                 /> 
-                <br/><br/>
+                <br/>
+                <br/>
                 <input 
                 type="text" 
                 name= "colorway"
                 placeholder="Colorway"
+                autoComplete="off"
                 value= {this.state.colorway} 
                 onChange={(e) => this.handleInputUpdate(e)}
                 /> 
-                <br/><br/>
+                <br/>
+                <br/>
                 <input 
                 type="number" 
                 name="price"
                 placeholder="$"
+                min="0"
                 step="10"
                 value= {this.state.price}
                 onChange={(e) => this.handleInputUpdate(e)}
                 />
-                <br/><br/>
-                <button onClick={() => this.handleSumbit()}>Submit</button>
+                <br/>
+                <br/>
+                <button type="submit">Submit</button>
             </form>
             
 
